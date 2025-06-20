@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #2e004f, #4e017b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+  text-align: center;
+}
+.logo {
+  height: 60px;
+}
+.header h1 {
+  margin: 10px 0 5px;
+  font-size: 28px;
+  color: #fff;
+}
+.greeting {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #eee;
+}
+.controls {
+  margin: 15px 0;
+}
+#subject, .submit-btn, #startBtn {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#subject {
+  background: white;
+  color: #2e004f;
+}
+#startBtn {
+  background: #6a0dad;
+  color: white;
+}
+.quiz-box {
+  margin-top: 20px;
+}
+.question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.option-btn {
+  padding: 10px;
+  background: #fff;
+  color: #2e004f;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+.option-btn:hover, .option-btn.selected {
+  background: #6a0dad;
+  color: white;
+}
+.timer {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.leaderboard-section {
+  margin-top: 20px;
+}
+.leaderboard-section ul {
+  list-style: none;
+  padding: 0;
+}

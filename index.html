@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThinkChamp CBT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container glass-card">
+    <div class="header">
+      <img src="logo.png" alt="ThinkChamp Logo" class="logo">
+      <h1>ThinkChamp CBT</h1>
+      <p id="greeting" class="greeting"></p>
+    </div>
+
+    <div class="controls">
+      <label for="subject">Choose Subject:</label>
+      <select id="subject">
+        <option value="english">English</option>
+        <option value="math">Mathematics</option>
+        <option value="biology">Biology</option>
+        <option value="chemistry">Chemistry</option>
+      </select>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="timer" class="timer">Time: 5:00</div>
+
+    <div id="quiz" class="quiz-box" style="display:none;">
+      <p id="question" class="question-text"></p>
+      <div id="options" class="options"></div>
+      <button id="submitBtn" class="submit-btn">Submit</button>
+    </div>
+
+    <div class="leaderboard-section">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard"></ul>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
