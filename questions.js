@@ -1,4 +1,3 @@
-// questions object must be added here as questions = { english: [...], math: [...], biology: [...], chemistry: [...] };
 const questions = {
   english: [
     { question: "What is the synonym of 'obscure'?", options: ["Clear", "Famous", "Vague", "Visible"], answer: "Vague" },
